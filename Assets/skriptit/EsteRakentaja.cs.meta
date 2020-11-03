@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 79556be8ac1e5a043b9ba6bd3f92f6a2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Este: {fileID: 5829984919817871530, guid: d23cff728c7a4244b9b1b710141321b5, type: 3}
+  - Pisteeste: {fileID: 5231717061359928433, guid: 13eeba98c102d9049929b14b33a65edb, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
