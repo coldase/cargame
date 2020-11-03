@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rakentaja : MonoBehaviour
 {
-    /* Tämän luokan kirjoitti: "Jari-Pekka Vihiniemi"
+    /* Tämän luokan kirjoitti: "Unknown"
      * Kurssille Ohjelmoinnin perusteet
      * 1. oppimistehtävä 
      */
