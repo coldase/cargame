@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6341682559242018175}
   - component: {fileID: 6341682559242018160}
   - component: {fileID: 6341682559242018172}
+  - component: {fileID: -6774857670509150534}
   m_Layer: 0
   m_Name: Tie
   m_TagString: Untagged
@@ -111,6 +112,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Este: {fileID: 5829984919817871530, guid: d23cff728c7a4244b9b1b710141321b5, type: 3}
   Pisteeste: {fileID: 5231717061359928433, guid: 13eeba98c102d9049929b14b33a65edb, type: 3}
+--- !u!114 &-6774857670509150534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6341682559242018161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a70f7786132c9844997346403969fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tie: {fileID: 6341682559242018161}
 --- !u!1 &8519196884229510692
 GameObject:
   m_ObjectHideFlags: 0

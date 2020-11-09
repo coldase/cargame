@@ -6,10 +6,11 @@ public class EsteRakentaja : MonoBehaviour
 {
     public GameObject Este;
     public GameObject Pisteeste;
+
     // Start is called before the first frame update
     void Start()
     {
-        //RakennaPisteesteita();
+        //RakennaPisteesteita(10, 100);
         //RakennaEsteita();
     }
 
@@ -19,7 +20,7 @@ public class EsteRakentaja : MonoBehaviour
     {
         
     }
-    void RakennaPisteesteita()
+    void RakennaPisteesteita(int start, int end)
     {
         for (int i=10; i < 100; i += 10)
         {

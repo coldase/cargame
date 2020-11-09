@@ -19,7 +19,6 @@ public class AutonLiike : MonoBehaviour
     void Update()
     {
         check_if_ob();
-        
         xsijainti = 0f;
         //Lähdetään muuttamaan kappaleen z sijaintia
         //Translate muuttaa kappaleen sijaintia

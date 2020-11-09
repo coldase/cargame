@@ -5,18 +5,27 @@ using UnityEngine;
 public class tarkistaTriggerOsuma : MonoBehaviour
 {
     public GameObject tie;
+    private bool triggered = false;
+    static float tieindex = 2f;
+    static int tienumero = 2;
 
     private void OnTriggerEnter(Collider osuma)
     {
-        if (osuma.CompareTag("autotag"))
+        if (osuma.CompareTag("autotag") && !triggered)
         {
             //z sijainti pitäisi olla 150, 250, 350, jne
-            // laita luvun 2 tilalle muuttuja, jonka avulla pystyt rakentamaan
+            //laita luvun 2 tilalle muuttuja, jonka avulla pystyt rakentamaan
             //tien aina oikeaan kohtaan pelissä
             //vihje "static"
             Debug.Log("TRIGGEREDD!!!!");
-            Instantiate(tie, new Vector3(0f, -0.5f, 50f + (2 - 1) * 100f), Quaternion.identity);
-
+            Instantiate(tie, new Vector3(0f, -0.5f, 50f + (tieindex - 1f) * 100f), Quaternion.identity).name = tienumero.ToString();
+            triggered = true;
+            tieindex += 1f;
+            tienumero++;
+        }
+        if (tienumero > 5)
+        {
+            Destroy(GameObject.Find((tienumero-4).ToString()));
         }
     }
 }
