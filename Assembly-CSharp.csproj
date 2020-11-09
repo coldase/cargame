@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A3AE9E3D-D8AA-48A8-8621-C22D6EFBCA2B}</ProjectGuid>
+    <ProjectGuid>{F243AB06-ED49-062C-6D80-64A5979AAED7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,7 +63,7 @@
     <Compile Include="Assets\skriptit\AutonLiike.cs" />
     <Compile Include="Assets\skriptit\statistiikka.cs" />
     <Compile Include="Assets\skriptit\tarkistakorkeus.cs" />
-    <Compile Include="Assets\skriptit\Maaliviiva.cs" />
+    <Compile Include="Assets\skriptit\tarkistaTriggerOsuma.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -9,8 +9,8 @@ public class EsteRakentaja : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RakennaPisteesteita();
-        RakennaEsteita();
+        //RakennaPisteesteita();
+        //RakennaEsteita();
     }
 
 
