@@ -6,9 +6,9 @@ public class tarkistakorkeus : MonoBehaviour
 {
     void Update()
     {
-        if(transform.position.y <-5f)
+        if(transform.position.y < -2f)
         {
             Destroy(this.gameObject);
-            }
+        }
     } 
 }

@@ -16,9 +16,9 @@ public class PoistaObjecteja : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(statistiikka.tieindex > 4)
+        if(statistiikka.tieindex > 5)
         {
-            GameObject poistettavaTie = GameObject.Find((statistiikka.tieindex - 3).ToString());
+            GameObject poistettavaTie = GameObject.Find((statistiikka.tieindex - 4).ToString());
             Destroy(poistettavaTie);
         }
     }

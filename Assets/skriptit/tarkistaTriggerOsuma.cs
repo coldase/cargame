@@ -6,8 +6,6 @@ public class tarkistaTriggerOsuma : MonoBehaviour
 {
     public GameObject tie;
     
-    public static float testi = 100f;
-
     private void Update()
     {
         //etsi kameran sijainti
@@ -21,11 +19,22 @@ public class tarkistaTriggerOsuma : MonoBehaviour
         {
             
             Debug.Log("TRIGGEREDD!!!!");
-            var zRoad = 50f + (statistiikka.tieindex - 1f) * 100f;
-            Instantiate(tie, new Vector3(0f, -0.5f, zRoad), Quaternion.identity).name = statistiikka.tieindex.ToString();
+            var startRoad = 50f + (statistiikka.tieindex - 1f) * 100f;
+            Instantiate(tie, new Vector3(0f, -0.5f, startRoad), Quaternion.identity).name = statistiikka.tieindex.ToString();
             statistiikka.tieindex += 1f;
-            Debug.Log(zRoad);
-            testi = zRoad;
+            statistiikka.startRoad = startRoad;
+            Debug.Log(startRoad);
+            statistiikka.score++;
+            
+            //Vaikeusasteen säätö
+            if (statistiikka.tieindex < 10)
+            {
+                statistiikka.vaikeusaste = 1;
+            }
+            if (statistiikka.tieindex > 10)
+            {
+                statistiikka.vaikeusaste = statistiikka.tieindex / 10;
+            }
         }
     }
 }

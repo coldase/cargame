@@ -7,10 +7,10 @@ public class Este : MonoBehaviour
 {
     private void OnCollisionEnter(Collision osuma)
     {
-        if (osuma.gameObject.CompareTag("autotag"))
+        if (osuma.gameObject.CompareTag("autotrigger"))
         {
-            statistiikka.pisteet = 0;
-            SceneManager.LoadScene("ajopeli_hiekkalaatikko");
+            Destroy(this.gameObject);
+            statistiikka.gas--;
         }
-    }    
+    }
 }

@@ -6,11 +6,10 @@ public class Pisteeste : MonoBehaviour
 {
     private void OnCollisionEnter(Collision osuma)
     {
-        if (osuma.gameObject.CompareTag("autotag"))
+        if (osuma.gameObject.CompareTag("autotrigger"))
         {
-            statistiikka.pisteet++;
             Destroy(this.gameObject);
+            statistiikka.gas++;
         }
-    }
-    
+    }    
 }

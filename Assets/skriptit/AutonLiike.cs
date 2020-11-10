@@ -34,7 +34,13 @@ public class AutonLiike : MonoBehaviour
         {
             xsijainti = SivuttaisLiike * Time.deltaTime;
         }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            auto.AddForce(0,0,-5f);       
+        }
+        
         auto.AddForce(xsijainti, 0, AutonNopeus * Time.deltaTime, ForceMode.Force);
+        
     }
 
     // Aloittaa scenen alusta ja nollaa pisteet jos auto tippuu tieltä (Out of Bounds)
@@ -44,7 +50,10 @@ public class AutonLiike : MonoBehaviour
         if (auto.transform.position.y < -5)
         {
             SceneManager.LoadScene("ajopeli_hiekkalaatikko");
-            statistiikka.pisteet = 0;
+            statistiikka.tieindex = 2f;
+            statistiikka.gas = 20;
+            statistiikka.vaikeusaste = 1f;
+            statistiikka.startRoad = 0f;
         }
     }
 }

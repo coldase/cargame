@@ -10,8 +10,8 @@ public class EsteRakentaja : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        //RakennaEsteita(80, tarkistaTriggerOsuma.testi);
-        //RakennaPisteesteita(80, tarkistaTriggerOsuma.testi);
+        RakennaEsteita(statistiikka.startRoad, statistiikka.startRoad + 100f, statistiikka.vaikeusaste);
+        RakennaPisteesteita(statistiikka.startRoad, statistiikka.startRoad + 100f);
     }
 
        
@@ -29,9 +29,10 @@ public class EsteRakentaja : MonoBehaviour
         }
     }
 
-    void RakennaEsteita(float start, float end)
+    void RakennaEsteita(float start, float end, float taso)
     {
-        for (float i =start; i < end; i += 20)
+
+        for (float i =start; i < end; i += 50 / taso)
         {
             int random_x = Random.Range(-9, 9);
             Instantiate(Este, new Vector3(random_x, 1, i), Quaternion.identity);
