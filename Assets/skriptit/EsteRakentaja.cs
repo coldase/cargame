@@ -10,11 +10,11 @@ public class EsteRakentaja : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        RakennaEsteita(80, tarkistaTriggerOsuma.testi);
-        RakennaPisteesteita(80, tarkistaTriggerOsuma.testi);
+        //RakennaEsteita(80, tarkistaTriggerOsuma.testi);
+        //RakennaPisteesteita(80, tarkistaTriggerOsuma.testi);
     }
 
-
+       
     // Update is called once per frame
     void Update()
     {

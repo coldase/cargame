@@ -7,6 +7,7 @@ public class statistiikka : MonoBehaviour
 {
     public Text PisteetTeksti;
     public static int pisteet = 0;
+    public static float tieindex = 2f;
 
     // Start is called before the first frame update
     void Start()
