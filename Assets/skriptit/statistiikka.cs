@@ -34,7 +34,7 @@ public class statistiikka : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("ajopeli_hiekkalaatikko");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             statistiikka.tieindex = 2f;
             statistiikka.gas = 20;
             statistiikka.vaikeusaste = 1f;
